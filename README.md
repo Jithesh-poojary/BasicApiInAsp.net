@@ -44,7 +44,7 @@ This API provides access to villa information and functionalities for a store se
    - Visual Studio or your preferred IDE
 2. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/product-catalog-api.git
+   git clone https://github.com/your-username/BasicApiInAsp.git
 Run the application:
 Bash
 cd villa-catalog-api
