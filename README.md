@@ -27,15 +27,14 @@ ASP.NET Web APIs: https://dotnet.microsoft.com/en-us/apps/aspnet/apis
 ASP.NET 8 Documentation: https://docs.microsoft.com/en-us/aspnet/core/
 Example Content:
 
-## ASP.NET 8 Web API - Product Catalog
+## ASP.NET 8 Web API - 
 
-This API provides access to product information and functionalities for a store selling various items.
+This API provides access to villa information and functionalities for a store selling various items.
 
 **Key Features:**
 
-- Listing, adding, updating, and deleting products
+- Listing, adding, updating, and deleting villa
 - Search and filtering capabilities
-- Secure and controlled access with JWT authentication
 - Flexible and extensible using dependency injection
 
 **Getting Started:**
@@ -48,11 +47,7 @@ This API provides access to product information and functionalities for a store 
    git clone https://github.com/your-username/product-catalog-api.git
 Run the application:
 Bash
-cd product-catalog-api
-dotnet run
-Use code with caution.
-Open http://localhost:5000 in your browser.
-API Endpoints:
+cd villa-catalog-api
 
 /VillaApi: Get a list of all products
 /VillaApi/{id}: Get a specific product by its ID
