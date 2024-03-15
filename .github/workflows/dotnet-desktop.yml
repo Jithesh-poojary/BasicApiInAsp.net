@@ -1,0 +1,26 @@
+name: Build
+ 
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+ 
+env:
+  PROJECT_SLN_File_NAME: ApiPractice.sln
+ 
+jobs:
+  build:
+    runs-on: windows-latest
+ 
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x  
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build ${{ env.PROJECT_SLN_File_NAME }} --configuration Release --no-restore
